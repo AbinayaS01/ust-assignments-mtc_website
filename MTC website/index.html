@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to MTC</title>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to MTC</h1>
+    <p>Your trusted partner in cloud solutions and tech education, helping you harness the potential of cutting-edge technologies for a brighter future.</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <section id="home">
+        <h2>Welcome to MTC</h2>
+        <p>At MTC, we are dedicated to empowering individuals and businesses alike with state-of-the-art technology solutions and professional training. Our mission is to bridge the knowledge gap in fields such as Artificial Intelligence, Machine Learning, Cloud Computing, and Full-Stack Development, enabling our clients and students to drive innovation and achieve digital transformation.</p>
+        <img src="home-image.jpg" alt="Welcome to MTC" class="content-image">
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Cloud Storage</h3>
+                <p>Our cloud storage solutions provide secure, scalable, and reliable storage options, designed to cater to the specific needs of businesses and individuals alike. Experience seamless data access, backup, and retrieval at any time, from anywhere in the world.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Data Management</h3>
+                <p>We offer comprehensive data management services that enable businesses to organize, analyze, and harness large volumes of data effectively. With our expertise, transform raw data into valuable insights, empowering you to make data-driven decisions confidently.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Cybersecurity</h3>
+                <p>Protect your critical data and digital assets with our advanced cybersecurity solutions. Our team is dedicated to securing your systems against the latest cyber threats, ensuring data integrity, confidentiality, and availability across all digital platforms.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Consulting</h3>
+                <p>With our expert consulting services, we guide businesses through their digital transformation journey. From strategic planning to practical implementation, our consultants are here to ensure you stay competitive in a fast-evolving technological landscape.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses">
+        <h2>Courses We Offer</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Artificial Intelligence</h3>
+                <p>Our AI course offers in-depth knowledge on building intelligent systems, covering everything from basic concepts to advanced algorithms. Learn how to create systems that can analyze data, recognize patterns, and make autonomous decisions.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Machine Learning</h3>
+                <p>Delve into the world of Machine Learning and master the algorithms that drive predictive modeling, classification, and data analysis. Gain hands-on experience to solve real-world problems by leveraging the power of data.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Cloud Computing</h3>
+                <p>Our cloud computing program provides the expertise needed to design, manage, and secure cloud infrastructures. Learn about various service models, deployment strategies, and how to optimize resources in a virtualized environment.</p>
+            </div>
+            <div class="grid-item">
+                <h3>Full-Stack Development</h3>
+                <p>Become a proficient full-stack developer with our comprehensive course that covers front-end and back-end technologies. From HTML and CSS to database management and server-side scripting, build versatile skills for today’s tech landscape.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Founded with a mission to bring technology closer to everyone, MTC has grown to be a premier provider of tech solutions and education. With a team of experienced professionals and trainers, we offer end-to-end services in cloud storage, cybersecurity, and digital transformation. We are committed to helping businesses stay competitive by providing robust technological support and helping individuals advance their skills to thrive in a digital-first world.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to embark on your tech journey or have any inquiries about our services? We would love to hear from you! Reach out to us at:</p>
+        <ul>
+            <li>Email: info@mtc.com</li>
+            <li>Phone: +1 234 567 890</li>
+            <li>Address: 123 Tech Avenue, Innovation City, CA</li>
+        </ul>
+    </section>
+</div>
+
+<!-- Back to Top button -->
+<button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
+<footer>
+    <p>&copy; 2024 MTC. All rights reserved.</p>
+</footer>
+
+<script>
+    const backToTopButton = document.getElementById('backToTop');
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</body>
+</html>
